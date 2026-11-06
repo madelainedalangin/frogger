@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://baekk01oiwjut"]
+
+[ext_resource type="Texture2D" uid="uid://d0so81ys3820n" path="res://graphics/objects/tree1.png" id="1_0rvme"]
+[ext_resource type="Texture2D" uid="uid://y3ndpd5bhsi3" path="res://graphics/objects/tree2.png" id="2_d4fnp"]
+
+[node name="Tree" type="Node2D" unique_id=792777653]
+
+[node name="tree_green" type="Sprite2D" parent="." unique_id=664495666]
+texture = ExtResource("1_0rvme")
+
+[node name="tree_orange" type="Sprite2D" parent="." unique_id=37674067]
+texture = ExtResource("2_d4fnp")
+
+[node name="tree_potted" type="Sprite2D" parent="." unique_id=222862383]

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dxqhah6wqbajo"]
+
+[ext_resource type="Texture2D" uid="uid://c5iy3tuxd0vaw" path="res://graphics/objects/barrier.png" id="1_qfl2k"]
+
+[node name="Barrier" type="Node2D" unique_id=689485203]
+
+[node name="barrier" type="Sprite2D" parent="." unique_id=119064656]
+texture = ExtResource("1_qfl2k")
