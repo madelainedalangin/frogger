@@ -28,44 +28,13 @@ size = Vector2(14.166672, 12.083333)
 size = Vector2(13.750001, 12.5)
 
 [node name="ObjectsMarket" type="StaticBody2D" unique_id=1134856329]
+y_sort_enabled = true
 scale = Vector2(1.2, 1.2)
-collision_layer = 3
-collision_mask = 3
+collision_layer = 16
+collision_mask = 2
 
 [node name="House1" type="Sprite2D" parent="." unique_id=565848369]
 texture = ExtResource("1_ra533")
-
-[node name="Box3" type="Sprite2D" parent="House1" unique_id=300740736]
-position = Vector2(8.000122, 39)
-texture = ExtResource("2_7v3oe")
-
-[node name="Box2" type="Sprite2D" parent="House1" unique_id=1526178490]
-position = Vector2(-5, 39)
-texture = ExtResource("3_gyyo7")
-
-[node name="Tree2" type="Sprite2D" parent="House1" unique_id=90106087]
-position = Vector2(-66.99988, -19)
-texture = ExtResource("4_ffpgh")
-
-[node name="Tree1" type="Sprite2D" parent="House1" unique_id=604943872]
-position = Vector2(-83, -9)
-texture = ExtResource("5_3ek8u")
-
-[node name="Box1" type="Sprite2D" parent="House1" unique_id=658419770]
-position = Vector2(-16, 39)
-texture = ExtResource("6_gcvxk")
-
-[node name="Bin" type="Sprite2D" parent="House1" unique_id=1419398709]
-position = Vector2(-54, 33)
-texture = ExtResource("7_lbg2g")
-
-[node name="TreePotted" type="Sprite2D" parent="House1" unique_id=1194983590]
-position = Vector2(42, 30)
-texture = ExtResource("8_665an")
-
-[node name="Box4" type="Sprite2D" parent="House1" unique_id=1226721957]
-position = Vector2(-26.999878, 39)
-texture = ExtResource("3_gyyo7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1195986723]
 position = Vector2(-15.833333, -3.541667)
@@ -90,3 +59,35 @@ shape = SubResource("RectangleShape2D_3ek8u")
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="." unique_id=262030671]
 position = Vector2(-66.666664, -17.5)
 shape = SubResource("RectangleShape2D_gcvxk")
+
+[node name="Box3" type="Sprite2D" parent="." unique_id=300740736]
+position = Vector2(8.000122, 39)
+texture = ExtResource("2_7v3oe")
+
+[node name="Box2" type="Sprite2D" parent="." unique_id=1526178490]
+position = Vector2(-5, 39)
+texture = ExtResource("3_gyyo7")
+
+[node name="Tree2" type="Sprite2D" parent="." unique_id=90106087]
+position = Vector2(-66.99988, -19)
+texture = ExtResource("4_ffpgh")
+
+[node name="Tree1" type="Sprite2D" parent="." unique_id=604943872]
+position = Vector2(-83, -9)
+texture = ExtResource("5_3ek8u")
+
+[node name="Box1" type="Sprite2D" parent="." unique_id=658419770]
+position = Vector2(-16, 39)
+texture = ExtResource("6_gcvxk")
+
+[node name="Bin" type="Sprite2D" parent="." unique_id=1419398709]
+position = Vector2(-54, 33)
+texture = ExtResource("7_lbg2g")
+
+[node name="TreePotted" type="Sprite2D" parent="." unique_id=1194983590]
+position = Vector2(42, 30)
+texture = ExtResource("8_665an")
+
+[node name="Box4" type="Sprite2D" parent="." unique_id=1226721957]
+position = Vector2(-26.99988, 39)
+texture = ExtResource("3_gyyo7")
