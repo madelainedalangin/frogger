@@ -1,9 +1,22 @@
 [gd_scene format=3 uid="uid://c3mdcioslrm4p"]
 
-[ext_resource type="Texture2D" uid="uid://d0dya2slufckd" path="res://graphics/cars/green.png" id="1_50v30"]
+[ext_resource type="Texture2D" uid="uid://ded8huv3lr1a7" path="res://graphics/cars/yellow.png" id="1_c35m8"]
+[ext_resource type="Script" uid="uid://cd5xhsevs1vit" path="res://scenes/car.gd" id="1_qt2eu"]
 
-[node name="CarGreen" type="Node2D" unique_id=303647029]
-scale = Vector2(1.5, 1.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qt2eu"]
+size = Vector2(23, 14)
 
-[node name="car_green" type="Sprite2D" parent="." unique_id=1846995903]
-texture = ExtResource("1_50v30")
+[node name="Car" type="Area2D" unique_id=493525916]
+script = ExtResource("1_qt2eu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=784835328]
+texture = ExtResource("1_c35m8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=2014258369]
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_qt2eu")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1231244791]
+rect = Rect2(-11, -10, 22, 20)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
