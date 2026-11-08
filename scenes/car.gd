@@ -3,6 +3,11 @@ extends Area2D
 var direction = Vector2.LEFT
 var speed = 1
 
+func _ready() -> void:
+	if position.x < 0:
+		direction.x = 1
+		$Sprite2D.flip_h = true
+
 # we are checking for overlap so no physics included
 func _process(delta: float) -> void:
 	# updating the position of this area 2D node

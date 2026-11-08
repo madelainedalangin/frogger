@@ -81,6 +81,18 @@ position = Vector2(200, 90)
 [node name="Marker2D5" type="Marker2D" parent="CarStartPosition" unique_id=1526542715]
 position = Vector2(199, 138)
 
+[node name="Marker2D6" type="Marker2D" parent="CarStartPosition" unique_id=618151359]
+position = Vector2(-200, -28)
+
+[node name="Marker2D7" type="Marker2D" parent="CarStartPosition" unique_id=1996533036]
+position = Vector2(-201, 112)
+
+[node name="Marker2D8" type="Marker2D" parent="CarStartPosition" unique_id=1789483151]
+position = Vector2(-202, 159)
+
+[node name="Marker2D9" type="Marker2D" parent="CarStartPosition" unique_id=415339896]
+position = Vector2(-201, -96)
+
 [connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_finish_area_2d_body_entered"]
 [connection signal="timeout" from="Timer/CarTimer" to="." method="_on_car_timer_timeout"]
