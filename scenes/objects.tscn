@@ -91,3 +91,5 @@ texture = ExtResource("8_665an")
 [node name="Box4" type="Sprite2D" parent="." unique_id=1226721957]
 position = Vector2(-26.99988, 39)
 texture = ExtResource("3_gyyo7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=475176718]
