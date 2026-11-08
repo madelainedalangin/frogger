@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://crnp0rh5iccsu"]
-
-[ext_resource type="Texture2D" uid="uid://ded8huv3lr1a7" path="res://graphics/cars/yellow.png" id="1_d4kmw"]
-
-[node name="CarYellow" type="Node2D" unique_id=527641417]
-
-[node name="car_yellow" type="Sprite2D" parent="." unique_id=1170106473]
-texture = ExtResource("1_d4kmw")
