@@ -1,7 +1,7 @@
 extends Area2D
 
 var direction = Vector2.LEFT
-var speed = 1
+var speed = 100
 
 func _ready() -> void:
 	if position.x < 0:
@@ -11,7 +11,7 @@ func _ready() -> void:
 # we are checking for overlap so no physics included
 func _process(delta: float) -> void:
 	# updating the position of this area 2D node
-	position += direction * speed
+	position += direction * speed * delta
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:

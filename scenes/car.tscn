@@ -7,14 +7,16 @@
 size = Vector2(23, 14)
 
 [node name="Car" type="Area2D" unique_id=493525916]
+collision_layer = 4
+collision_mask = 2
 script = ExtResource("1_qt2eu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2014258369]
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_qt2eu")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=784835328]
 texture = ExtResource("1_c35m8")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=2014258369]
-position = Vector2(-0.5, 2)
-shape = SubResource("RectangleShape2D_qt2eu")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1231244791]
 rect = Rect2(-11, -10, 22, 20)
