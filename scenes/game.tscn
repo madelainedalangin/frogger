@@ -40,6 +40,15 @@ size = Vector2(419, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gee14"]
 size = Vector2(16, 4)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1j6l"]
+size = Vector2(4, 3)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pl11u"]
+size = Vector2(17, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhx41"]
+size = Vector2(14, 12)
+
 [node name="Game" type="Node2D" unique_id=106856770]
 script = ExtResource("1_lbhrr")
 
@@ -93,6 +102,7 @@ collision_layer = 16
 collision_mask = 15
 
 [node name="Player" parent="Objects" unique_id=151759964 instance=ExtResource("2_yqjtg")]
+z_index = 1
 position = Vector2(18, 0)
 
 [node name="Barrier" type="StaticBody2D" parent="Objects" unique_id=243100194]
@@ -147,461 +157,473 @@ position = Vector2(-202, 159)
 [node name="Marker2D9" type="Marker2D" parent="CarStartPosition" unique_id=415339896]
 position = Vector2(-201, -96)
 
-[node name="LotsOfStuff" type="Node2D" parent="." unique_id=1821630389]
+[node name="LotsOfStuff" type="StaticBody2D" parent="." unique_id=2095017810]
 y_sort_enabled = true
 position = Vector2(-26, -76)
 
-[node name="Light" type="Sprite2D" parent="." unique_id=880004343]
-position = Vector2(-8, 64)
+[node name="Light" type="Sprite2D" parent="LotsOfStuff" unique_id=880004343]
+position = Vector2(18, 140)
 texture = ExtResource("8_ir15t")
 
-[node name="Light2" type="Sprite2D" parent="." unique_id=344047228]
-position = Vector2(-25, 6)
+[node name="Light2" type="Sprite2D" parent="LotsOfStuff" unique_id=344047228]
+position = Vector2(1, 82)
 texture = ExtResource("8_ir15t")
 
-[node name="TreePotted" type="Sprite2D" parent="." unique_id=623238517]
-position = Vector2(106, -86)
+[node name="TreePotted" type="Sprite2D" parent="LotsOfStuff" unique_id=623238517]
+position = Vector2(132, -10)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted2" type="Sprite2D" parent="." unique_id=933117059]
-position = Vector2(134, -86)
+[node name="TreePotted2" type="Sprite2D" parent="LotsOfStuff" unique_id=933117059]
+position = Vector2(160, -10)
 texture = ExtResource("6_kvuet")
 
-[node name="Light3" type="Sprite2D" parent="." unique_id=1308586468]
-position = Vector2(120, -85)
+[node name="Light3" type="Sprite2D" parent="LotsOfStuff" unique_id=1308586468]
+position = Vector2(146, -9)
 texture = ExtResource("8_ir15t")
 
-[node name="Light4" type="Sprite2D" parent="." unique_id=1601658866]
-position = Vector2(-115, -84)
+[node name="Light4" type="Sprite2D" parent="LotsOfStuff" unique_id=1601658866]
+position = Vector2(-89, -8)
 texture = ExtResource("8_ir15t")
 
-[node name="Bench" type="Sprite2D" parent="." unique_id=1152874115]
-position = Vector2(-48, 63)
+[node name="Bench" type="Sprite2D" parent="LotsOfStuff" unique_id=1152874115]
+position = Vector2(-22, 139)
 texture = ExtResource("9_ca42v")
 
-[node name="TreePotted3" type="Sprite2D" parent="." unique_id=431585384]
-position = Vector2(-183, 8)
+[node name="TreePotted3" type="Sprite2D" parent="LotsOfStuff" unique_id=431585384]
+position = Vector2(-157, 84)
 texture = ExtResource("6_kvuet")
 
-[node name="Tree2" type="Sprite2D" parent="." unique_id=934220650]
-position = Vector2(-66, 216)
+[node name="Tree2" type="Sprite2D" parent="LotsOfStuff" unique_id=934220650]
+position = Vector2(-40, 292)
 texture = ExtResource("10_rysoc")
 
-[node name="Tree1" type="Sprite2D" parent="." unique_id=1564752285]
-position = Vector2(-39, 235)
+[node name="Tree1" type="Sprite2D" parent="LotsOfStuff" unique_id=1564752285]
+position = Vector2(-13, 311)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree3" type="Sprite2D" parent="." unique_id=311830072]
-position = Vector2(-141, 213)
+[node name="Tree3" type="Sprite2D" parent="LotsOfStuff" unique_id=311830072]
+position = Vector2(-115, 289)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree4" type="Sprite2D" parent="." unique_id=45397316]
-position = Vector2(-168, 220)
+[node name="Tree4" type="Sprite2D" parent="LotsOfStuff" unique_id=45397316]
+position = Vector2(-142, 296)
 texture = ExtResource("10_rysoc")
 
-[node name="Tree5" type="Sprite2D" parent="." unique_id=1164057098]
-position = Vector2(-186, 213)
+[node name="Tree5" type="Sprite2D" parent="LotsOfStuff" unique_id=1164057098]
+position = Vector2(-160, 289)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree6" type="Sprite2D" parent="." unique_id=1251159625]
-position = Vector2(-144, 259)
+[node name="Tree6" type="Sprite2D" parent="LotsOfStuff" unique_id=1251159625]
+position = Vector2(-118, 335)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree7" type="Sprite2D" parent="." unique_id=441477404]
-position = Vector2(-181, 293)
+[node name="Tree7" type="Sprite2D" parent="LotsOfStuff" unique_id=441477404]
+position = Vector2(-155, 369)
 texture = ExtResource("10_rysoc")
 
-[node name="Bench2" type="Sprite2D" parent="." unique_id=2037959132]
-position = Vector2(-157, 252)
+[node name="Bench2" type="Sprite2D" parent="LotsOfStuff" unique_id=2037959132]
+position = Vector2(-131, 328)
 texture = ExtResource("9_ca42v")
 
-[node name="Light5" type="Sprite2D" parent="." unique_id=313364694]
-position = Vector2(-157, 229)
+[node name="Light5" type="Sprite2D" parent="LotsOfStuff" unique_id=313364694]
+position = Vector2(-131, 305)
 texture = ExtResource("8_ir15t")
 
-[node name="GreenCar" type="Sprite2D" parent="." unique_id=1284025417]
-position = Vector2(-120, 287)
+[node name="GreenCar" type="Sprite2D" parent="LotsOfStuff" unique_id=1284025417]
+position = Vector2(-94, 363)
 texture = ExtResource("12_264po")
 
-[node name="Bin" type="Sprite2D" parent="." unique_id=359028689]
-position = Vector2(-147, 233)
+[node name="Bin" type="Sprite2D" parent="LotsOfStuff" unique_id=359028689]
+position = Vector2(-121, 309)
 texture = ExtResource("13_1kice")
 
-[node name="Tree8" type="Sprite2D" parent="." unique_id=1455866321]
-position = Vector2(-161, 278)
+[node name="Tree8" type="Sprite2D" parent="LotsOfStuff" unique_id=1455866321]
+position = Vector2(-135, 354)
 texture = ExtResource("10_rysoc")
 
-[node name="Tree9" type="Sprite2D" parent="." unique_id=1764331894]
-position = Vector2(-149, 309)
+[node name="Tree9" type="Sprite2D" parent="LotsOfStuff" unique_id=1764331894]
+position = Vector2(-123, 385)
 texture = ExtResource("11_ssvqc")
 
-[node name="Light6" type="Sprite2D" parent="." unique_id=199698898]
-position = Vector2(-41, -85)
+[node name="Light6" type="Sprite2D" parent="LotsOfStuff" unique_id=199698898]
+position = Vector2(-15, -9)
 texture = ExtResource("8_ir15t")
 
-[node name="TreePotted4" type="Sprite2D" parent="." unique_id=475210490]
-position = Vector2(-78, -86)
+[node name="TreePotted4" type="Sprite2D" parent="LotsOfStuff" unique_id=475210490]
+position = Vector2(-52, -10)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted5" type="Sprite2D" parent="." unique_id=624084166]
-position = Vector2(-93, -86)
+[node name="TreePotted5" type="Sprite2D" parent="LotsOfStuff" unique_id=624084166]
+position = Vector2(-67, -10)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted6" type="Sprite2D" parent="." unique_id=1446737649]
-position = Vector2(-63, -86)
+[node name="TreePotted6" type="Sprite2D" parent="LotsOfStuff" unique_id=1446737649]
+position = Vector2(-37, -10)
 texture = ExtResource("6_kvuet")
 
-[node name="RedCar" type="Sprite2D" parent="." unique_id=1920513853]
-position = Vector2(79, -213)
+[node name="RedCar" type="Sprite2D" parent="LotsOfStuff" unique_id=1920513853]
+position = Vector2(105, -137)
 texture = ExtResource("14_e1j6l")
 
-[node name="GreenCar2" type="Sprite2D" parent="." unique_id=504530512]
-position = Vector2(61, -213)
+[node name="GreenCar2" type="Sprite2D" parent="LotsOfStuff" unique_id=504530512]
+position = Vector2(87, -137)
 texture = ExtResource("12_264po")
 
-[node name="Barrier" type="Sprite2D" parent="." unique_id=1532241607]
-position = Vector2(10, -74)
+[node name="Barrier" type="Sprite2D" parent="LotsOfStuff" unique_id=1532241607]
+position = Vector2(36, 2)
 texture = ExtResource("5_iywne")
 
-[node name="Barrier2" type="Sprite2D" parent="." unique_id=1301523847]
-position = Vector2(27, -74)
+[node name="Barrier2" type="Sprite2D" parent="LotsOfStuff" unique_id=1301523847]
+position = Vector2(53, 2)
 texture = ExtResource("5_iywne")
 
-[node name="Barrier3" type="Sprite2D" parent="." unique_id=815464102]
-position = Vector2(152, -75)
+[node name="Barrier3" type="Sprite2D" parent="LotsOfStuff" unique_id=815464102]
+position = Vector2(178, 1)
 texture = ExtResource("5_iywne")
 
-[node name="Barrier4" type="Sprite2D" parent="." unique_id=1899289501]
-position = Vector2(174, -75)
+[node name="Barrier4" type="Sprite2D" parent="LotsOfStuff" unique_id=1899289501]
+position = Vector2(200, 1)
 texture = ExtResource("5_iywne")
 
-[node name="GreenCar3" type="Sprite2D" parent="." unique_id=96805320]
-position = Vector2(80, -73)
+[node name="GreenCar3" type="Sprite2D" parent="LotsOfStuff" unique_id=96805320]
+position = Vector2(106, 3)
 texture = ExtResource("12_264po")
 
-[node name="Green" type="Sprite2D" parent="." unique_id=1178547251]
-position = Vector2(111, 64)
+[node name="Green" type="Sprite2D" parent="LotsOfStuff" unique_id=1178547251]
+position = Vector2(137, 140)
 texture = ExtResource("15_pl11u")
 
-[node name="Green2" type="Sprite2D" parent="." unique_id=1209940596]
-position = Vector2(-49, 79)
+[node name="Green2" type="Sprite2D" parent="LotsOfStuff" unique_id=1209940596]
+position = Vector2(-23, 155)
 texture = ExtResource("15_pl11u")
 
-[node name="Red" type="Sprite2D" parent="." unique_id=438850278]
-position = Vector2(-25, 77)
+[node name="Red" type="Sprite2D" parent="LotsOfStuff" unique_id=438850278]
+position = Vector2(1, 153)
 texture = ExtResource("16_bhx41")
 
-[node name="Red2" type="Sprite2D" parent="." unique_id=287218930]
-position = Vector2(-144, 77)
+[node name="Red2" type="Sprite2D" parent="LotsOfStuff" unique_id=287218930]
+position = Vector2(-118, 153)
 texture = ExtResource("16_bhx41")
 
-[node name="Green3" type="Sprite2D" parent="." unique_id=350275799]
-position = Vector2(-171, 79)
+[node name="Green3" type="Sprite2D" parent="LotsOfStuff" unique_id=350275799]
+position = Vector2(-145, 155)
 texture = ExtResource("15_pl11u")
 
-[node name="House3" type="Sprite2D" parent="." unique_id=1749812782]
-position = Vector2(165, 15)
+[node name="House3" type="Sprite2D" parent="LotsOfStuff" unique_id=1749812782]
+position = Vector2(191, 91)
 texture = ExtResource("17_qnb83")
 
-[node name="Light7" type="Sprite2D" parent="." unique_id=441917585]
-position = Vector2(134, 5)
+[node name="Light7" type="Sprite2D" parent="LotsOfStuff" unique_id=441917585]
+position = Vector2(160, 81)
 texture = ExtResource("8_ir15t")
 
-[node name="Bin2" type="Sprite2D" parent="." unique_id=902505362]
-position = Vector2(152, 45)
+[node name="Bin2" type="Sprite2D" parent="LotsOfStuff" unique_id=902505362]
+position = Vector2(178, 121)
 texture = ExtResource("13_1kice")
 
-[node name="RedCar2" type="Sprite2D" parent="." unique_id=1716282102]
-position = Vector2(140, 62)
+[node name="RedCar2" type="Sprite2D" parent="LotsOfStuff" unique_id=1716282102]
+position = Vector2(166, 138)
 texture = ExtResource("14_e1j6l")
 
-[node name="Barrier5" type="Sprite2D" parent="." unique_id=1873816184]
-position = Vector2(135, 77)
+[node name="Barrier5" type="Sprite2D" parent="LotsOfStuff" unique_id=1873816184]
+position = Vector2(161, 153)
 texture = ExtResource("5_iywne")
 
-[node name="House2" type="Sprite2D" parent="." unique_id=1564550207]
-position = Vector2(88, -2)
+[node name="House2" type="Sprite2D" parent="LotsOfStuff" unique_id=1564550207]
+position = Vector2(114, 74)
 texture = ExtResource("18_sww3w")
 
-[node name="House1" type="Sprite2D" parent="." unique_id=801807388]
-position = Vector2(-93, 7)
+[node name="House1" type="Sprite2D" parent="LotsOfStuff" unique_id=801807388]
+position = Vector2(-67, 83)
 texture = ExtResource("19_suyxu")
 
-[node name="TreePotted7" type="Sprite2D" parent="." unique_id=2126660738]
-position = Vector2(-166, 8)
+[node name="TreePotted7" type="Sprite2D" parent="LotsOfStuff" unique_id=2126660738]
+position = Vector2(-140, 84)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted8" type="Sprite2D" parent="." unique_id=1354803481]
-position = Vector2(-148, 8)
+[node name="TreePotted8" type="Sprite2D" parent="LotsOfStuff" unique_id=1354803481]
+position = Vector2(-122, 84)
 texture = ExtResource("6_kvuet")
 
-[node name="RedCar3" type="Sprite2D" parent="." unique_id=94721221]
-position = Vector2(-35, 29)
+[node name="RedCar3" type="Sprite2D" parent="LotsOfStuff" unique_id=94721221]
+position = Vector2(-9, 105)
 texture = ExtResource("14_e1j6l")
 
-[node name="GreenCar4" type="Sprite2D" parent="." unique_id=1645482353]
-position = Vector2(-16, 30)
+[node name="GreenCar4" type="Sprite2D" parent="LotsOfStuff" unique_id=1645482353]
+position = Vector2(10, 106)
 texture = ExtResource("12_264po")
 
-[node name="Barrier6" type="Sprite2D" parent="." unique_id=1760823254]
-position = Vector2(-72, 76)
+[node name="Barrier6" type="Sprite2D" parent="LotsOfStuff" unique_id=1760823254]
+position = Vector2(-46, 152)
 texture = ExtResource("5_iywne")
 
-[node name="Barrier7" type="Sprite2D" parent="." unique_id=265237130]
-position = Vector2(-119, 76)
+[node name="Barrier7" type="Sprite2D" parent="LotsOfStuff" unique_id=265237130]
+position = Vector2(-93, 152)
 texture = ExtResource("5_iywne")
 
-[node name="Barrier8" type="Sprite2D" parent="." unique_id=1527977456]
-position = Vector2(-95, 76)
+[node name="Barrier8" type="Sprite2D" parent="LotsOfStuff" unique_id=1527977456]
+position = Vector2(-69, 152)
 texture = ExtResource("5_iywne")
 
-[node name="Box3" type="Sprite2D" parent="." unique_id=392472124]
-position = Vector2(-117, 45)
+[node name="Box3" type="Sprite2D" parent="LotsOfStuff" unique_id=392472124]
+position = Vector2(-91, 121)
 texture = ExtResource("20_sgl2t")
 
-[node name="Box1" type="Sprite2D" parent="." unique_id=1584887024]
-position = Vector2(-104, 45)
+[node name="Box1" type="Sprite2D" parent="LotsOfStuff" unique_id=1584887024]
+position = Vector2(-78, 121)
 texture = ExtResource("21_qouja")
 
-[node name="Box2" type="Sprite2D" parent="." unique_id=647352481]
-position = Vector2(-93, 45)
+[node name="Box2" type="Sprite2D" parent="LotsOfStuff" unique_id=647352481]
+position = Vector2(-67, 121)
 texture = ExtResource("22_wljb1")
 
-[node name="Box4" type="Sprite2D" parent="." unique_id=1817007125]
-position = Vector2(-82, 45)
+[node name="Box4" type="Sprite2D" parent="LotsOfStuff" unique_id=1817007125]
+position = Vector2(-56, 121)
 texture = ExtResource("21_qouja")
 
-[node name="Bench3" type="Sprite2D" parent="." unique_id=1100429648]
-position = Vector2(-147, 30)
+[node name="Bench3" type="Sprite2D" parent="LotsOfStuff" unique_id=1100429648]
+position = Vector2(-121, 106)
 texture = ExtResource("9_ca42v")
 
-[node name="Barrier9" type="Sprite2D" parent="." unique_id=991660691]
-position = Vector2(63, -74)
+[node name="Barrier9" type="Sprite2D" parent="LotsOfStuff" unique_id=991660691]
+position = Vector2(89, 2)
 texture = ExtResource("5_iywne")
 
-[node name="House4" type="Sprite2D" parent="." unique_id=485694594]
-position = Vector2(-165, -224)
+[node name="House4" type="Sprite2D" parent="LotsOfStuff" unique_id=485694594]
+position = Vector2(-139, -148)
 texture = ExtResource("17_qnb83")
 
-[node name="House5" type="Sprite2D" parent="." unique_id=229036122]
-position = Vector2(152, -247)
+[node name="House5" type="Sprite2D" parent="LotsOfStuff" unique_id=229036122]
+position = Vector2(178, -171)
 texture = ExtResource("18_sww3w")
 
-[node name="Bin3" type="Sprite2D" parent="." unique_id=1703397681]
-position = Vector2(105, -235)
+[node name="Bin3" type="Sprite2D" parent="LotsOfStuff" unique_id=1703397681]
+position = Vector2(131, -159)
 texture = ExtResource("13_1kice")
 
-[node name="Line" type="Sprite2D" parent="." unique_id=512644702]
-position = Vector2(82, -275)
+[node name="Line" type="Sprite2D" parent="LotsOfStuff" unique_id=512644702]
+position = Vector2(108, -199)
 texture = ExtResource("23_v2yb1")
 
-[node name="Light8" type="Sprite2D" parent="." unique_id=800815797]
-position = Vector2(70, -244)
+[node name="Light8" type="Sprite2D" parent="LotsOfStuff" unique_id=800815797]
+position = Vector2(96, -168)
 texture = ExtResource("8_ir15t")
 
-[node name="Tree10" type="Sprite2D" parent="." unique_id=384194756]
-position = Vector2(90, -252)
+[node name="Tree10" type="Sprite2D" parent="LotsOfStuff" unique_id=384194756]
+position = Vector2(116, -176)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree11" type="Sprite2D" parent="." unique_id=1866187474]
-position = Vector2(70, -298)
+[node name="Tree11" type="Sprite2D" parent="LotsOfStuff" unique_id=1866187474]
+position = Vector2(96, -222)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree12" type="Sprite2D" parent="." unique_id=1508624743]
-position = Vector2(59, -249)
+[node name="Tree12" type="Sprite2D" parent="LotsOfStuff" unique_id=1508624743]
+position = Vector2(85, -173)
 texture = ExtResource("10_rysoc")
 
-[node name="Sign" type="Sprite2D" parent="." unique_id=1363969968]
-position = Vector2(51, 63)
+[node name="Sign" type="Sprite2D" parent="LotsOfStuff" unique_id=1363969968]
+position = Vector2(77, 139)
 texture = ExtResource("24_js0lu")
 
-[node name="Sign2" type="Sprite2D" parent="." unique_id=1337400620]
-position = Vector2(-76, 201)
+[node name="Sign2" type="Sprite2D" parent="LotsOfStuff" unique_id=1337400620]
+position = Vector2(-50, 277)
 texture = ExtResource("24_js0lu")
 
-[node name="Traffic" type="Sprite2D" parent="." unique_id=476447614]
-position = Vector2(50, 117)
+[node name="Traffic" type="Sprite2D" parent="LotsOfStuff" unique_id=476447614]
+position = Vector2(76, 193)
 texture = ExtResource("7_trtic")
 
-[node name="TreePotted9" type="Sprite2D" parent="." unique_id=586392470]
-position = Vector2(-180, -151)
+[node name="TreePotted9" type="Sprite2D" parent="LotsOfStuff" unique_id=586392470]
+position = Vector2(-154, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted10" type="Sprite2D" parent="." unique_id=79130602]
-position = Vector2(-164, -151)
+[node name="TreePotted10" type="Sprite2D" parent="LotsOfStuff" unique_id=79130602]
+position = Vector2(-138, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="Light9" type="Sprite2D" parent="." unique_id=446404064]
-position = Vector2(-150, -149)
+[node name="Light9" type="Sprite2D" parent="LotsOfStuff" unique_id=446404064]
+position = Vector2(-124, -73)
 texture = ExtResource("8_ir15t")
 
-[node name="TreePotted11" type="Sprite2D" parent="." unique_id=655012052]
-position = Vector2(-135, -151)
+[node name="TreePotted11" type="Sprite2D" parent="LotsOfStuff" unique_id=655012052]
+position = Vector2(-109, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted12" type="Sprite2D" parent="." unique_id=293554355]
-position = Vector2(-119, -151)
+[node name="TreePotted12" type="Sprite2D" parent="LotsOfStuff" unique_id=293554355]
+position = Vector2(-93, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="Bench4" type="Sprite2D" parent="." unique_id=421013999]
-position = Vector2(-73, -244)
+[node name="Bench4" type="Sprite2D" parent="LotsOfStuff" unique_id=421013999]
+position = Vector2(-47, -168)
 texture = ExtResource("9_ca42v")
 
-[node name="TreePotted13" type="Sprite2D" parent="." unique_id=2074018186]
-position = Vector2(-103, -151)
+[node name="TreePotted13" type="Sprite2D" parent="LotsOfStuff" unique_id=2074018186]
+position = Vector2(-77, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted14" type="Sprite2D" parent="." unique_id=619278265]
-position = Vector2(-87, -151)
+[node name="TreePotted14" type="Sprite2D" parent="LotsOfStuff" unique_id=619278265]
+position = Vector2(-61, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted15" type="Sprite2D" parent="." unique_id=1518004626]
-position = Vector2(-71, -151)
+[node name="TreePotted15" type="Sprite2D" parent="LotsOfStuff" unique_id=1518004626]
+position = Vector2(-45, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="Light10" type="Sprite2D" parent="." unique_id=483936693]
-position = Vector2(-54, -150)
+[node name="Light10" type="Sprite2D" parent="LotsOfStuff" unique_id=483936693]
+position = Vector2(-28, -74)
 texture = ExtResource("8_ir15t")
 
-[node name="TreePotted16" type="Sprite2D" parent="." unique_id=806512265]
-position = Vector2(-37, -151)
+[node name="TreePotted16" type="Sprite2D" parent="LotsOfStuff" unique_id=806512265]
+position = Vector2(-11, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted17" type="Sprite2D" parent="." unique_id=1686844015]
-position = Vector2(-22, -151)
+[node name="TreePotted17" type="Sprite2D" parent="LotsOfStuff" unique_id=1686844015]
+position = Vector2(4, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted18" type="Sprite2D" parent="." unique_id=1851839827]
-position = Vector2(-7, -151)
+[node name="TreePotted18" type="Sprite2D" parent="LotsOfStuff" unique_id=1851839827]
+position = Vector2(19, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted19" type="Sprite2D" parent="." unique_id=35168025]
-position = Vector2(8, -151)
+[node name="TreePotted19" type="Sprite2D" parent="LotsOfStuff" unique_id=35168025]
+position = Vector2(34, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted20" type="Sprite2D" parent="." unique_id=1088228579]
-position = Vector2(23, -151)
+[node name="TreePotted20" type="Sprite2D" parent="LotsOfStuff" unique_id=1088228579]
+position = Vector2(49, -75)
 texture = ExtResource("6_kvuet")
 
-[node name="Light11" type="Sprite2D" parent="." unique_id=1565723434]
-position = Vector2(119, -151)
+[node name="Light11" type="Sprite2D" parent="LotsOfStuff" unique_id=1565723434]
+position = Vector2(145, -75)
 texture = ExtResource("8_ir15t")
 
-[node name="TreePotted21" type="Sprite2D" parent="." unique_id=443955194]
-position = Vector2(135, -152)
+[node name="TreePotted21" type="Sprite2D" parent="LotsOfStuff" unique_id=443955194]
+position = Vector2(161, -76)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted22" type="Sprite2D" parent="." unique_id=1244179301]
-position = Vector2(150, -152)
+[node name="TreePotted22" type="Sprite2D" parent="LotsOfStuff" unique_id=1244179301]
+position = Vector2(176, -76)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted23" type="Sprite2D" parent="." unique_id=1302274734]
-position = Vector2(165, -152)
+[node name="TreePotted23" type="Sprite2D" parent="LotsOfStuff" unique_id=1302274734]
+position = Vector2(191, -76)
 texture = ExtResource("6_kvuet")
 
-[node name="TreePotted24" type="Sprite2D" parent="." unique_id=1814188887]
-position = Vector2(180, -152)
+[node name="TreePotted24" type="Sprite2D" parent="LotsOfStuff" unique_id=1814188887]
+position = Vector2(206, -76)
 texture = ExtResource("6_kvuet")
 
-[node name="Tree13" type="Sprite2D" parent="." unique_id=1160595787]
-position = Vector2(-132, -217)
+[node name="Tree13" type="Sprite2D" parent="LotsOfStuff" unique_id=1160595787]
+position = Vector2(-106, -141)
 texture = ExtResource("10_rysoc")
 
-[node name="Tree14" type="Sprite2D" parent="." unique_id=1059191341]
-position = Vector2(-110, -213)
+[node name="Tree14" type="Sprite2D" parent="LotsOfStuff" unique_id=1059191341]
+position = Vector2(-84, -137)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree15" type="Sprite2D" parent="." unique_id=1955416179]
-position = Vector2(-138, -276)
+[node name="Tree15" type="Sprite2D" parent="LotsOfStuff" unique_id=1955416179]
+position = Vector2(-112, -200)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree16" type="Sprite2D" parent="." unique_id=2057808044]
-position = Vector2(-90, -223)
+[node name="Tree16" type="Sprite2D" parent="LotsOfStuff" unique_id=2057808044]
+position = Vector2(-64, -147)
 texture = ExtResource("10_rysoc")
 
-[node name="Tree17" type="Sprite2D" parent="." unique_id=144853617]
-position = Vector2(-175, -294)
+[node name="Tree17" type="Sprite2D" parent="LotsOfStuff" unique_id=144853617]
+position = Vector2(-149, -218)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree18" type="Sprite2D" parent="." unique_id=628805738]
-position = Vector2(-119, -294)
+[node name="Tree18" type="Sprite2D" parent="LotsOfStuff" unique_id=628805738]
+position = Vector2(-93, -218)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree19" type="Sprite2D" parent="." unique_id=1848487075]
-position = Vector2(-77, -304)
+[node name="Tree19" type="Sprite2D" parent="LotsOfStuff" unique_id=1848487075]
+position = Vector2(-51, -228)
 texture = ExtResource("11_ssvqc")
 
-[node name="Line2" type="Sprite2D" parent="." unique_id=406542469]
-position = Vector2(-157, 62)
+[node name="Line2" type="Sprite2D" parent="LotsOfStuff" unique_id=406542469]
+position = Vector2(-131, 138)
 texture = ExtResource("23_v2yb1")
 
-[node name="Tree20" type="Sprite2D" parent="." unique_id=76918897]
-position = Vector2(-29, 284)
+[node name="Tree20" type="Sprite2D" parent="LotsOfStuff" unique_id=76918897]
+position = Vector2(-3, 360)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree21" type="Sprite2D" parent="." unique_id=609724322]
-position = Vector2(-64, 295)
+[node name="Tree21" type="Sprite2D" parent="LotsOfStuff" unique_id=609724322]
+position = Vector2(-38, 371)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree22" type="Sprite2D" parent="." unique_id=2050236804]
-position = Vector2(-57, 256)
+[node name="Tree22" type="Sprite2D" parent="LotsOfStuff" unique_id=2050236804]
+position = Vector2(-31, 332)
 texture = ExtResource("10_rysoc")
 
-[node name="Tree23" type="Sprite2D" parent="." unique_id=449942507]
-position = Vector2(175, 261)
+[node name="Tree23" type="Sprite2D" parent="LotsOfStuff" unique_id=449942507]
+position = Vector2(201, 337)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree24" type="Sprite2D" parent="." unique_id=1052036617]
-position = Vector2(157, 281)
+[node name="Tree24" type="Sprite2D" parent="LotsOfStuff" unique_id=1052036617]
+position = Vector2(183, 357)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree25" type="Sprite2D" parent="." unique_id=1844165395]
-position = Vector2(-44, 300)
+[node name="Tree25" type="Sprite2D" parent="LotsOfStuff" unique_id=1844165395]
+position = Vector2(-18, 376)
 texture = ExtResource("10_rysoc")
 
-[node name="House6" type="Sprite2D" parent="." unique_id=851608423]
-position = Vector2(164, 199)
+[node name="House6" type="Sprite2D" parent="LotsOfStuff" unique_id=851608423]
+position = Vector2(190, 275)
 texture = ExtResource("17_qnb83")
 
-[node name="House7" type="Sprite2D" parent="." unique_id=1315857423]
-position = Vector2(12, 184)
+[node name="House7" type="Sprite2D" parent="LotsOfStuff" unique_id=1315857423]
+position = Vector2(38, 260)
 texture = ExtResource("18_sww3w")
 
-[node name="House8" type="Sprite2D" parent="." unique_id=24455321]
-position = Vector2(117, 199)
+[node name="House8" type="Sprite2D" parent="LotsOfStuff" unique_id=24455321]
+position = Vector2(143, 275)
 texture = ExtResource("17_qnb83")
 
-[node name="GreenCar5" type="Sprite2D" parent="." unique_id=383456833]
-position = Vector2(83, 218)
+[node name="GreenCar5" type="Sprite2D" parent="LotsOfStuff" unique_id=383456833]
+position = Vector2(109, 294)
 texture = ExtResource("12_264po")
 
-[node name="Line3" type="Sprite2D" parent="." unique_id=792539239]
-position = Vector2(109, 263)
+[node name="Line3" type="Sprite2D" parent="LotsOfStuff" unique_id=792539239]
+position = Vector2(135, 339)
 texture = ExtResource("23_v2yb1")
 
-[node name="Box5" type="Sprite2D" parent="." unique_id=1112554476]
-position = Vector2(42, 237)
+[node name="Box5" type="Sprite2D" parent="LotsOfStuff" unique_id=1112554476]
+position = Vector2(68, 313)
 texture = ExtResource("21_qouja")
 
-[node name="Tree26" type="Sprite2D" parent="." unique_id=2068913730]
-position = Vector2(129, 292)
+[node name="Tree26" type="Sprite2D" parent="LotsOfStuff" unique_id=2068913730]
+position = Vector2(155, 368)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree27" type="Sprite2D" parent="." unique_id=596518903]
-position = Vector2(141, 227)
+[node name="Tree27" type="Sprite2D" parent="LotsOfStuff" unique_id=596518903]
+position = Vector2(167, 303)
 texture = ExtResource("10_rysoc")
 
-[node name="Tree28" type="Sprite2D" parent="." unique_id=1968833976]
-position = Vector2(51, 259)
+[node name="Tree28" type="Sprite2D" parent="LotsOfStuff" unique_id=1968833976]
+position = Vector2(77, 335)
 texture = ExtResource("10_rysoc")
 
-[node name="Tree29" type="Sprite2D" parent="." unique_id=2004378201]
-position = Vector2(14, 294)
+[node name="Tree29" type="Sprite2D" parent="LotsOfStuff" unique_id=2004378201]
+position = Vector2(40, 370)
 texture = ExtResource("11_ssvqc")
 
-[node name="Tree30" type="Sprite2D" parent="." unique_id=1590889379]
-position = Vector2(68, 296)
+[node name="Tree30" type="Sprite2D" parent="LotsOfStuff" unique_id=1590889379]
+position = Vector2(94, 372)
 texture = ExtResource("10_rysoc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LotsOfStuff" unique_id=1386309410]
+position = Vector2(23, 90.5)
+shape = SubResource("RectangleShape2D_e1j6l")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LotsOfStuff" unique_id=1261105791]
+position = Vector2(-61.5, -189)
+shape = SubResource("RectangleShape2D_pl11u")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="LotsOfStuff" unique_id=1027621594]
+position = Vector2(-40, 295)
+shape = SubResource("RectangleShape2D_bhx41")
 
 [connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_finish_area_2d_body_entered"]
