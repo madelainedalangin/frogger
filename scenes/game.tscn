@@ -9,13 +9,13 @@
 [ext_resource type="PackedScene" uid="uid://cr8df1admiin6" path="res://scenes/lots_of_stuff.tscn" id="8_gee14"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lbhrr"]
-size = Vector2(20, 754.5)
+size = Vector2(20, 665)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iywne"]
-size = Vector2(20, 818)
+size = Vector2(20, 643)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p57ef"]
-size = Vector2(425, 20)
+size = Vector2(417, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5sy4"]
 size = Vector2(419, 20)
@@ -39,15 +39,15 @@ collision_mask = 0
 metadata/_edit_lock_ = true
 
 [node name="LeftBorderLimit" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=75429667]
-position = Vector2(-198, -45.25)
+position = Vector2(-198, -0.5)
 shape = SubResource("RectangleShape2D_lbhrr")
 
 [node name="RightBorderLimit" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=971438328]
-position = Vector2(199, 28)
+position = Vector2(199, 0.5)
 shape = SubResource("RectangleShape2D_iywne")
 
 [node name="TopBorderLimit" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=2044114205]
-position = Vector2(-1, -323)
+position = Vector2(0.5, -323)
 shape = SubResource("RectangleShape2D_p57ef")
 
 [node name="BottomBorderLimit" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=929519947]
@@ -126,6 +126,7 @@ position = Vector2(-201, -96)
 [node name="Timer" type="Node" parent="." unique_id=2125844304]
 
 [node name="CarTimer" type="Timer" parent="Timer" unique_id=354034417]
+wait_time = 0.2
 autostart = true
 
 [connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_area_2d_body_entered"]

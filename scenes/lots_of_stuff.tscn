@@ -76,9 +76,6 @@ size = Vector2(16, 6)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h708j"]
 size = Vector2(8, 12)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_et0oy"]
-size = Vector2(94, 76)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hokux"]
 size = Vector2(47, 10.5)
 
@@ -95,7 +92,7 @@ size = Vector2(12, 17)
 size = Vector2(77, 77.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2vcn4"]
-size = Vector2(44, 41)
+size = Vector2(44, 29)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lf45d"]
 size = Vector2(6, 7)
@@ -127,10 +124,17 @@ size = Vector2(6, 7)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3o528"]
 size = Vector2(13, 18)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_et0oy"]
+size = Vector2(94, 33)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d84ae"]
+size = Vector2(47, 7)
+
 [node name="LotsOfStuff" type="StaticBody2D" unique_id=1264875924]
 y_sort_enabled = true
 collision_layer = 16
 collision_mask = 2
+metadata/_edit_horizontal_guides_ = [79.0]
 
 [node name="TreePotted" type="Sprite2D" parent="." unique_id=860552003]
 y_sort_enabled = true
@@ -967,10 +971,6 @@ shape = SubResource("RectangleShape2D_kax3p")
 position = Vector2(-121, 107)
 shape = SubResource("RectangleShape2D_h708j")
 
-[node name="CollisionShape2D64" type="CollisionShape2D" parent="." unique_id=877266637]
-position = Vector2(-67, 83)
-shape = SubResource("RectangleShape2D_et0oy")
-
 [node name="CollisionShape2D65" type="CollisionShape2D" parent="." unique_id=1087337563]
 position = Vector2(-74.5, 118.75)
 shape = SubResource("RectangleShape2D_hokux")
@@ -1004,7 +1004,7 @@ position = Vector2(177, -161.75)
 shape = SubResource("RectangleShape2D_qjf2r")
 
 [node name="CollisionShape2D73" type="CollisionShape2D" parent="." unique_id=793871536]
-position = Vector2(191, 99.5)
+position = Vector2(191, 106)
 shape = SubResource("RectangleShape2D_2vcn4")
 
 [node name="House9" type="Sprite2D" parent="." unique_id=856471973]
@@ -1013,7 +1013,7 @@ position = Vector2(145, 91)
 texture = ExtResource("12_tpjuf")
 
 [node name="CollisionShape2D103" type="CollisionShape2D" parent="." unique_id=1194195393]
-position = Vector2(145, 99.5)
+position = Vector2(145, 105.5)
 shape = SubResource("RectangleShape2D_2vcn4")
 
 [node name="CollisionShape2D74" type="CollisionShape2D" parent="." unique_id=6876991]
@@ -1067,3 +1067,11 @@ texture = ExtResource("21_5sik3")
 [node name="CollisionShape2D72" type="CollisionShape2D" parent="." unique_id=1685503267]
 position = Vector2(109, 108)
 shape = SubResource("RectangleShape2D_3o528")
+
+[node name="CollisionShape2D64" type="CollisionShape2D" parent="." unique_id=2038124155]
+position = Vector2(-67, 102.5)
+shape = SubResource("RectangleShape2D_et0oy")
+
+[node name="CollisionShape2D104" type="CollisionShape2D" parent="." unique_id=1099300849]
+position = Vector2(-74.5, 120.5)
+shape = SubResource("RectangleShape2D_d84ae")
