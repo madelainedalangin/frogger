@@ -34,11 +34,8 @@ size = Vector2(8, 6)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_btlvh"]
 size = Vector2(1.5, 4)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ximny"]
-size = Vector2(79, 71)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sw3jj"]
-size = Vector2(93, 38)
+size = Vector2(93, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k7ylt"]
 size = Vector2(13.5, 17)
@@ -129,6 +126,9 @@ size = Vector2(94, 33)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d84ae"]
 size = Vector2(47, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ximny"]
+size = Vector2(78, 56)
 
 [node name="LotsOfStuff" type="StaticBody2D" unique_id=1264875924]
 y_sort_enabled = true
@@ -598,17 +598,12 @@ texture = ExtResource("4_btlvh")
 
 [node name="House6" type="Sprite2D" parent="." unique_id=454589737]
 y_sort_enabled = true
-position = Vector2(190, 275)
+position = Vector2(190, 285)
 texture = ExtResource("12_tpjuf")
-
-[node name="House7" type="Sprite2D" parent="." unique_id=599345952]
-y_sort_enabled = true
-position = Vector2(38, 260)
-texture = ExtResource("13_fxm84")
 
 [node name="House8" type="Sprite2D" parent="." unique_id=268025678]
 y_sort_enabled = true
-position = Vector2(143, 275)
+position = Vector2(143, 285)
 texture = ExtResource("12_tpjuf")
 
 [node name="GreenCar5" type="Sprite2D" parent="." unique_id=1840420713]
@@ -633,12 +628,12 @@ texture = ExtResource("5_ximny")
 
 [node name="Tree27" type="Sprite2D" parent="." unique_id=1034899748]
 y_sort_enabled = true
-position = Vector2(167, 303)
+position = Vector2(167, 321)
 texture = ExtResource("4_btlvh")
 
 [node name="Tree28" type="Sprite2D" parent="." unique_id=1168426141]
 y_sort_enabled = true
-position = Vector2(77, 335)
+position = Vector2(102, 321)
 texture = ExtResource("4_btlvh")
 
 [node name="Tree29" type="Sprite2D" parent="." unique_id=441292056]
@@ -650,6 +645,21 @@ texture = ExtResource("5_ximny")
 y_sort_enabled = true
 position = Vector2(94, 372)
 texture = ExtResource("4_btlvh")
+
+[node name="Housie" type="Sprite2D" parent="." unique_id=1560323096]
+y_sort_enabled = true
+position = Vector2(38, 288)
+texture = ExtResource("13_fxm84")
+
+[node name="Taxi" type="Sprite2D" parent="." unique_id=794960539]
+y_sort_enabled = true
+position = Vector2(109, 108)
+texture = ExtResource("21_5sik3")
+
+[node name="House9" type="Sprite2D" parent="." unique_id=856471973]
+y_sort_enabled = true
+position = Vector2(145, 91)
+texture = ExtResource("12_tpjuf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2053980570]
 position = Vector2(-40, 295)
@@ -748,7 +758,7 @@ position = Vector2(40, 371)
 shape = SubResource("RectangleShape2D_5mp4w")
 
 [node name="CollisionShape2D16" type="CollisionShape2D" parent="." unique_id=2017019713]
-position = Vector2(77, 336)
+position = Vector2(102, 322)
 shape = SubResource("RectangleShape2D_5mp4w")
 
 [node name="CollisionShape2D17" type="CollisionShape2D" parent="." unique_id=1376002423]
@@ -768,7 +778,7 @@ position = Vector2(201, 339)
 shape = SubResource("RectangleShape2D_5mp4w")
 
 [node name="CollisionShape2D21" type="CollisionShape2D" parent="." unique_id=1376182313]
-position = Vector2(167, 305)
+position = Vector2(167, 323)
 shape = SubResource("RectangleShape2D_5mp4w")
 
 [node name="CollisionShape2D22" type="CollisionShape2D" parent="." unique_id=2015212994]
@@ -787,12 +797,8 @@ shape = SubResource("RectangleShape2D_ffyho")
 position = Vector2(-50.25, 286)
 shape = SubResource("RectangleShape2D_btlvh")
 
-[node name="CollisionShape2D25" type="CollisionShape2D" parent="." unique_id=201523704]
-position = Vector2(38, 276.5)
-shape = SubResource("RectangleShape2D_ximny")
-
 [node name="CollisionShape2D26" type="CollisionShape2D" parent="." unique_id=154848905]
-position = Vector2(166.5, 284)
+position = Vector2(166.5, 298)
 shape = SubResource("RectangleShape2D_sw3jj")
 
 [node name="CollisionShape2D27" type="CollisionShape2D" parent="." unique_id=934284369]
@@ -1007,11 +1013,6 @@ shape = SubResource("RectangleShape2D_qjf2r")
 position = Vector2(191, 106)
 shape = SubResource("RectangleShape2D_2vcn4")
 
-[node name="House9" type="Sprite2D" parent="." unique_id=856471973]
-y_sort_enabled = true
-position = Vector2(145, 91)
-texture = ExtResource("12_tpjuf")
-
 [node name="CollisionShape2D103" type="CollisionShape2D" parent="." unique_id=1194195393]
 position = Vector2(145, 105.5)
 shape = SubResource("RectangleShape2D_2vcn4")
@@ -1060,10 +1061,6 @@ shape = SubResource("RectangleShape2D_t3t03")
 position = Vector2(131, -159.5)
 shape = SubResource("RectangleShape2D_ai8wt")
 
-[node name="Taxi" type="Sprite2D" parent="." unique_id=794960539]
-position = Vector2(109, 108)
-texture = ExtResource("21_5sik3")
-
 [node name="CollisionShape2D72" type="CollisionShape2D" parent="." unique_id=1685503267]
 position = Vector2(109, 108)
 shape = SubResource("RectangleShape2D_3o528")
@@ -1075,3 +1072,7 @@ shape = SubResource("RectangleShape2D_et0oy")
 [node name="CollisionShape2D104" type="CollisionShape2D" parent="." unique_id=1099300849]
 position = Vector2(-74.5, 120.5)
 shape = SubResource("RectangleShape2D_d84ae")
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="." unique_id=589858016]
+position = Vector2(38, 313)
+shape = SubResource("RectangleShape2D_ximny")
