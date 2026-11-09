@@ -10,13 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://boj6kq1t4mduj" path="res://graphics/objects/tree potted.png" id="8_665an"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ra533"]
-size = Vector2(65, 76.25)
+size = Vector2(65, 81.66667)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7v3oe"]
 size = Vector2(7.500002, 11.666665)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gyyo7"]
-size = Vector2(31.666664, 75.41666)
+size = Vector2(31.666664, 77.70833)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ffpgh"]
 size = Vector2(12.5, 15.833332)
@@ -37,7 +37,7 @@ collision_mask = 2
 texture = ExtResource("1_ra533")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1195986723]
-position = Vector2(-15.833333, -3.541667)
+position = Vector2(-15.833333, -0.8333329)
 shape = SubResource("RectangleShape2D_ra533")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=233721796]
@@ -45,7 +45,7 @@ position = Vector2(-53.75, 33.333332)
 shape = SubResource("RectangleShape2D_7v3oe")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=917777261]
-position = Vector2(32.5, -4.1666665)
+position = Vector2(32.5, -3.0208306)
 shape = SubResource("RectangleShape2D_gyyo7")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=1941845808]

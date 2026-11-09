@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://dqew3weeg73or" path="res://scenes/objects.tscn" id="3_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://c5iy3tuxd0vaw" path="res://graphics/objects/barrier.png" id="5_iywne"]
 [ext_resource type="Texture2D" uid="uid://boj6kq1t4mduj" path="res://graphics/objects/tree potted.png" id="6_kvuet"]
-[ext_resource type="Texture2D" uid="uid://cfe22lwgaf1k2" path="res://graphics/objects/traffic.png" id="7_trtic"]
 [ext_resource type="PackedScene" uid="uid://cr8df1admiin6" path="res://scenes/lots_of_stuff.tscn" id="8_gee14"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lbhrr"]
@@ -90,10 +89,6 @@ texture = ExtResource("6_kvuet")
 [node name="TreePotted2" type="Sprite2D" parent="Objects" unique_id=1699383559]
 position = Vector2(-134, -85)
 texture = ExtResource("6_kvuet")
-
-[node name="Traffic" type="Sprite2D" parent="Objects" unique_id=1636283593]
-position = Vector2(-7, 6)
-texture = ExtResource("7_trtic")
 
 [node name="LotsOfStuff" parent="Objects" unique_id=1264875924 instance=ExtResource("8_gee14")]
 position = Vector2(-26, -76)
