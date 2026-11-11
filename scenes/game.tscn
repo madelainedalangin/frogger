@@ -60,8 +60,7 @@ collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Borders/FinishArea2D" unique_id=2019999764]
-visible = false
-polygon = PackedVector2Array(-144, -265, -150, -221, -96, -184, 6, -170, 127, -196, 140, -253, 74, -294, 8, -306, -90, -299)
+polygon = PackedVector2Array(-185, -275, -190, -221, -189, -130, 190, -132, 181, -224, 194, -312, 80, -314, 8, -315, -181, -314)
 
 [node name="Objects" type="Node2D" parent="." unique_id=830739753]
 y_sort_enabled = true
@@ -145,6 +144,8 @@ offset_bottom = 23.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("8_0tnpc")
 theme_override_font_sizes/font_size = 17
+text = "Time elapsed: 0s"
+horizontal_alignment = 1
 
 [connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_finish_area_2d_body_entered"]
