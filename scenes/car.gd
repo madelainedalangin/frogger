@@ -17,7 +17,7 @@ func _ready() -> void:
 # we are checking for overlap so no physics included
 func _process(delta: float) -> void:
 	# updating the position of this area 2D node
-	position += direction * speed * delta
+	position += direction * speed * delta	
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:

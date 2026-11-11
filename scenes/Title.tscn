@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://bg46h5x2n6eev"]
+
+[ext_resource type="FontFile" uid="uid://dr201ov4c76pb" path="res://fonts/Crackman.otf" id="1_lq0lj"]
+[ext_resource type="Texture2D" uid="uid://bkgrir378horu" path="res://graphics/player/player_simple.png" id="2_2sdm5"]
+[ext_resource type="FontFile" uid="uid://hqpa84d2dqvp" path="res://fonts/Better VCR 9.0.1.ttf" id="3_2sdm5"]
+
+[node name="Title" type="Control" unique_id=2030040819]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1301905638]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.37538067, 0.46786362, 0.14253038, 1)
+
+[node name="GameTitle" type="Label" parent="." unique_id=1002527467]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -506.5
+offset_top = 89.0
+offset_right = 506.5
+offset_bottom = -1093.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_lq0lj")
+theme_override_font_sizes/font_size = 140
+text = "DODGY CARSIE"
+
+[node name="BigPlayerSprite" type="TextureRect" parent="." unique_id=1399347084]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.0
+offset_top = -70.0
+offset_right = 70.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2sdm5")
+
+[node name="HighScore" type="Label" parent="." unique_id=45495889]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.524
+offset_left = -166.5
+offset_top = 239.0
+offset_right = 166.5
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_2sdm5")
+theme_override_font_sizes/font_size = 30
+text = "High Score: 6767"
