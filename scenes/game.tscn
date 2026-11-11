@@ -59,7 +59,7 @@ shape = SubResource("RectangleShape2D_u5sy4")
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Borders/FinishArea2D" unique_id=2019999764]
+[node name="FinishedAreaZone" type="CollisionPolygon2D" parent="Borders/FinishArea2D" unique_id=2019999764]
 polygon = PackedVector2Array(-185, -275, -190, -221, -189, -130, 190, -132, 181, -224, 194, -312, 80, -314, 8, -315, -181, -314)
 
 [node name="Objects" type="Node2D" parent="." unique_id=830739753]

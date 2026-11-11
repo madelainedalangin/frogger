@@ -11,8 +11,6 @@ func _physics_process(_delta: float) -> void:
 	velocity = direction * speed
 	animation()
 	move_and_slide()
-	if Input.is_action_just_pressed("spacebar"):
-		print("I am pressing spacey barsie!")
 
 func animation():
 	if direction:
@@ -25,5 +23,5 @@ func animation():
 		$AnimatedSprite2D.frame = 0
 
 
-func _on_signal_practice_body_entered(body: Node2D) -> void:
+func _on_signal_practice_body_entered(_body: Node2D) -> void:
 	pass # Replace with function body.
