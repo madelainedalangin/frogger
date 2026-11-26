@@ -49,5 +49,3 @@ fonts/      title and interface fonts
 - Art: [Roguelike Modern City](https://kenney.nl/assets/roguelike-modern-city) by Kenney
 - Music: [City on Speed](https://opengameart.org/content/city-on-speed) by Section 31
 - Fonts: [Better VCR](https://www.dafont.com/better-vcr.font) by artdzyk and [Crackman](https://www.dafont.com/crackman.font) by Typomodernic Fonts
-
-Made by [Madelaine Dalangin](https://madelainedalangin.com).
